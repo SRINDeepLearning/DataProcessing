@@ -54,10 +54,10 @@ print $out "Total Unique Redeemed Users: ".$totalusers."\n";
 
 my @users_c;
 foreach my $a (keys %claimed_user){
-	if(%claimed_user{$a} != 0){
+	if($claimed_user{$a} != 0){
 		push @users_c, $a;
 	}
 }
-my $users_c = @users_c;
-print $out "Total Unique Claimed Users: ".$users_c."\n";
+my $user_c = @users_c;
+print $out "Total Unique Claimed Users: ".$user_c."\n";
 
